@@ -1,0 +1,19 @@
+module corba {
+    module hotelServer {
+
+        interface Server {
+            string queryCity2();
+	    string queryByCityName2(in string cityname);
+	    string queryRoomrates2(in string hotelID);
+	    string queryVacantrooms2(in string hotelID, in string checkindate, in string checkoutdate);
+	   // boolean insertBookers(in string bookerID, in string bookerName, in string telePhone, in string email, in string passwd);
+	    string booking2(in string checkinDate, in string checkoutDate, in string hotelID, in string roomID, in string bookerID, in string creditNO, in string brand);
+	    string queryHotel2(in string cityName);
+	   // string queryBookerinfo(in string bookerID);
+	    string queryTransaction2(in string transactionID);
+	    string getKey(in string path);
+	    string getSignature(in string data);
+			
+        };
+    };
+};
